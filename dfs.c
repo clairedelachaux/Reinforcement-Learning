@@ -103,35 +103,6 @@ int main(){
     return 0;
 }
 
-/* Makefile :
-
-prog : dfs.o functions.o mazeEnv.o
-gcc -o prog dfs.o functions.o mazeEnv.o
-dfs.o : dfs.c
-gcc -c -Wall -Werror -Wfatal-errors dfs.c
-function.o function.c function.h
-gcc -c -Wall -Werror -Wfatal-errors functions.c
-mazeEnv.o : mazeEnv.c mazeEnv.h
-gcc -c -Wall -Werror -Wfatal-errors mazeEnv.c
-clean
-rm -f prog dfs.o functions.o mazeEnv.o //reinitialise le processus
-
-Methode Gabriel
-
-CC = gcc
-CFlags = -W -Wall
-INC = I include/
-SRC = src/
-exec = dfs.
-all : $(EXEC)
-$(SRC)%.o: $(SRC)%.c
-$(CC) $(INC) -o %@ -c %.< $(CFLAGS)
-dfs : $(SRC)dfs.o $(SRC)functions.o $(SRC)mazeEnv.o
-_$(CC) $(INC) -o $(SRC) $@ $^ $(CFLAGS)
-clean
-rm -f $(SRC)*.o $(EXEC) //reinitialise le processus
-
-*/
 
 
 
