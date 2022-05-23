@@ -82,10 +82,6 @@ int dbl_q_learning(){
         while(!done && k<500){
             done = dql_next_step(s);
             k++;
-            /*if(k%20==0){
-                int st = s.new_row*cols +s.new_col;
-                printf("%d (%f %f %f %f), (%f %f %f %f)\n", st, Q1[st][0], Q1[st][1], Q1[st][2], Q1[st][3], Q2[st][0], Q2[st][1], Q2[st][2], Q2[st][3]);
-            }*/
         }
         printf("%d %d\n", k, i); 
     }
