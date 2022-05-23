@@ -15,7 +15,5 @@ int max_a(envOutput s, int a);
 
 int ql_next_step(envOutput s);
 
-int sarsa(envOutput s, int a);
-
 
 #endif
