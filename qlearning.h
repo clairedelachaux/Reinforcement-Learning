@@ -1,3 +1,6 @@
+#ifndef QLEARNING
+#define QLEARNING
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "mazeEnv.h"
